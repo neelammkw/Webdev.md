@@ -1,0 +1,70 @@
+#navbar{
+    flex-direction: column;
+    top: 0px;
+    display: flex; 
+     align-items: center;
+    justify-content: center; 
+    height:60px;
+    padding-bottom: 20px;
+} 
+.h-secondary1 {
+    padding-top: 3px;
+    font-size: 1.8rem;
+    /* padding: 35px; */
+    text-align: center;
+    flex-direction: column;}
+
+#navbar img{
+    height: 50px;
+}
+#home{
+height: 255px;
+padding: 7px;
+padding-bottom: 10px;
+flex-direction: column;
+}
+#home h1{
+    font-size: 1.7rem;
+}
+#home::before{
+    height: 339px;
+    
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding:  0px 7px;
+}
+#home p{
+    font-size: 14px;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+}
+
+#services .box{
+    display: flex;
+    flex-direction: column;
+margin: 2px;
+padding: 2px;
+overflow: hidden;
+}
+#services .box img {
+    height: 80px;
+    display: flex;
+        align-items: center;
+
+    /* margin: auto; */
+    /* padding-bottom: 5px; */
+}
+
+#client{
+    display: flex;
+    flex-direction: column;
+overflow: hidden;
+height: 50px;
+}
+.clients img {
+    height: 45px;
+    padding: 10px;
+}
