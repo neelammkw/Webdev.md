@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="email-svgrepo-com.svg" alt="" > <span>I Validate</span></div>
+            <ul>
+                <li><a href="">Home </a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Enter Your Email To Validate</h1>
+            <form action="/submit" method="post">
+                <!-- <label for="username">Username:</label><input type="text" id="username" name="username">
+                <br>
+                <br> -->
+                <label >Email:</label><input type="text" name="email" placeholder="Enter Your Emial" id="eml" required><br>
+                <br>
+
+                <!-- <label for="">Gender</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="female" id="female">
+                <label for="female">Female</label><br><br> -->
+                <input type="submit" id="submitbtn" value="submit">
+            </form>
+        </div>
+        <div class="container" >
+            <h2>Your Results</h2>
+            <div id="resultcont">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright Ivalidate.com | All Rights Reserved
+    </footer>
+    <script src="js/index.js"> </script>
+</body>
+
+</html>
