@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(217, 237, 231);
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin: 0;
+    padding: 12px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0 12px;
+    font-size: 20px;
+    justify-content: flex-end;
+
+    /* background-color: aqua; */
+}
+
+.nav li {
+    list-style: none;
+    padding: 20px;
+    margin: 0 12px;
+
+}
+
+.nav li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav li a:hover {
+    color: rgb(23, 41, 35);
+}
+
+.container {
+    text-align: center;
+    font-size: 12px;
+    max-width: 40vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.container form select {
+    width: 15vw;
+    padding: 2px;
+    border: 2px solid rebeccapurple;
+}
+
+.container form label {
+    font-size: 22px;
+    margin-top: 20px;
+    padding: 4px;
+}
+
+.container form input[type='number'] {
+    background-color: rgb(204, 236, 240);
+    width: 15vw;
+    margin: 12px;
+    padding: 2px;
+
+}
+
+.container .convertedAmount,
+.toCurrency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(170, 236, 244);
+    width: 15vw;
+    margin: auto;
+    padding: 2px;
+    
+}
+
+.btn {
+    background-color: aquamarine;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* margin: 2vh; */
+    width: 100px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.output {
+    display: none;
+}
+
+.tbl {
+    font-size: 18px;
+    width: 40vw;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20vh;
+    border: 2px solid rgb(83, 191, 189);
+    border-radius: 5px;
+}
+
+/* input{
+    font-size: bold 12px;
+} */
+.footer {
+    text-align: center;
+    font-size: 20px;
+    /* bottom: 20px; */
+}

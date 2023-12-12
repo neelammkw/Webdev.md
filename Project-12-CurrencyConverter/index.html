@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <h1 class="logo">My Currency Converter</h1>
+    <nav class="nav">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/home">About Us</a></li>
+            <li><a href="/home">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Choose Currency To convert</h1>
+        <form method="get">
+            <label name="quantity">Choose a Quantity:</label>
+            <input type="number" name="quantity" id="number" class="amount" value="1" min="1" /><br>
+
+            <label name="currency1">Choose a currency:</label>
+            <select class="fromCurrency">
+                <!-- <option value="INR">Indian Rupee</option>
+                <option value="USD">US Doller</option>
+                <option value="EUR">Euro</option> -->
+            </select>
+            <!-- <label for=""><input type="checkbox" name="terms" value="tandc">Accept Terms</label> -->
+            <br>
+            <!-- <button type="submit" class="btn" value="Convert"> Convert</button> -->
+    </div>
+    <div class="arrow">⇒</div>
+    <div class="container">
+        <h1>Choose Currency To convert</h1>
+        <form method="get">
+            <!-- <label name="quantity">Choose a Quantity:</label> -->
+
+            <!-- <label >Choose a currency:</label> -->
+            <input type="number" class="convertedAmount"/>
+            <br>
+
+            <select  class="toCurrency">
+                <!-- <option value="INR">Indian Rupee</option>
+                <option value="USD">US Doller</option>
+                <option value="EUR">Euro</option> -->
+            </select>
+            <!-- <label for=""><input type="checkbox" name="terms" value="tandc">Accept Terms</label> -->
+            <br>
+            
+    </div>
+    
+
+    </form>
+
+
+    <div class="output">
+        <h1>Here is the Converted Value of Currency</h1>
+        <table class="tbl">
+            <thead>
+                <tr style="color: rgb(34, 34, 92);">
+                    <th>Currency</th>
+                    <th>Currency Code</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+
+    </div>
+
+    
+    <footer class="footer">
+        CopyRight @ All Rights Reserved.
+    </footer>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
