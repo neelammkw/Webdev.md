@@ -87,7 +87,7 @@
         const wordInput = document.getElementById('word');
         const result = document.getElementById('result');
        const response = await fetch('/Webdev.md/Project-14-DictionaryApp/public/searchword?entry=' + encodeURIComponent(wordInput.value));
-
+console.log(response);
 
 try {
     if (!response.ok) {
