@@ -86,25 +86,27 @@
         e.preventDefault();
         const wordInput = document.getElementById('word');
         const result = document.getElementById('result');
-        try {
-            const response = await fetch(`https://neelammkw.github.io/Webdev.md/Project-14-DictionaryApp/searchword?entry=${wordInput.value}`);
-            const data = await response.json();
+        const response = await fetch(`https://neelammkw.github.io/Webdev.md/Project-14-DictionaryApp/searchword?entry=${wordInput.value}`);
 
-            console.log(data);
+try {
+    if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log(data);
 
-            let htmlStr = `<h4>You searched for the word:  <b>${data.word}</b> <br> Here are the meanings:</h4> <ul>`;
-             for (let index = 0; index < data.meaning.length; index++) {
-              const meaning = data.meaning[index];
-  htmlStr += `<li><b>${meaning.tag}</b> : ${meaning.values.join("-")}</li>`;
+    let htmlStr = `<h4>You searched for the word:  <b>${data.word}</b> <br> Here are the meanings:</h4> <ul>`;
 
-            }
-
-            htmlStr += `</ul>`;
-            result.innerHTML = htmlStr;
-        } catch (error) {
-            console.error('Error fetching data:', error);
-            result.innerHTML = 'Error fetching data. Please try again.';
-        }
+    for (let index = 0; index < data.meaning.length; index++) {
+        const meaning = data.meaning[index];
+        htmlStr += `<li><b>${meaning.tag}</b> : ${meaning.values.join("-")}</li>`;
+    }
+    htmlStr += `</ul>`;
+    result.innerHTML = htmlStr;
+} catch (error) {
+    console.error('Error fetching data:', error);
+    result.innerHTML = 'Error fetching data. Please try again.';
+}
     });
 });
 
