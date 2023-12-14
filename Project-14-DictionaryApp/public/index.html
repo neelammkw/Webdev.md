@@ -87,7 +87,7 @@
         const wordInput = document.getElementById('word');
         const result = document.getElementById('result');
         try {
-            const response = await fetch(`https://neelammkw.github.io/Webdev.md/Project-14-DictionaryApp/public/index.html/searchword?entry=${wordInput.value}`);
+            const response = await fetch(`https://neelammkw.github.io/Webdev.md/Project-14-DictionaryApp/searchword?entry=${wordInput.value}`);
             const data = await response.json();
 
             console.log(data);
