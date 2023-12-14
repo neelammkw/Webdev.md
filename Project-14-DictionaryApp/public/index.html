@@ -86,11 +86,13 @@
         e.preventDefault();
         const wordInput = document.getElementById('word');
         const result = document.getElementById('result');
-      const response = await fetch('/Project-14-DictionaryApp/searchword', {
+      const response = await fetch('/Webdev.md/Project-14-DictionaryApp/public/searchword', {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
     },
+
+
     params: {
         entry: encodeURIComponent(wordInput.value),
     },
