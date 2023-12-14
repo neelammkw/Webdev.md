@@ -105,16 +105,14 @@
                     }
                     htmlStr += `</ul>`;
                     result.innerHTML = htmlStr;
-                    // location.reload();
+
 
                 } catch (error) {
                     console.error('Error fetching data:', error);
                     result.innerHTML = 'Error fetching data. Please try again.';
                 }
             });
-            word.addEventListener('click', () => {
-            location.reload();
-        }, 5000);
+            
 
         });
     </script>
