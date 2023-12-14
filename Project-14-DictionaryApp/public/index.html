@@ -112,6 +112,10 @@
                     result.innerHTML = 'Error fetching data. Please try again.';
                 }
             });
+            wordInput.addEventListener('focus', () => {
+            location.reload();
+        });
+
         });
     </script>
 </body>
