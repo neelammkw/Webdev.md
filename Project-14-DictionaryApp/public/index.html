@@ -116,11 +116,17 @@
             
 
         });
-        function reload() {
-const wordInput = document.getElementById('word');
-            wordInput.value = "";
-            result.innerHTML = "";
-            
+       function reload() {
+    const wordInput = document.getElementById('word');
+    const result = document.getElementById('result');
+
+    wordInput.value = "";
+    result.innerHTML = "";
+
+    // Reload the page
+    location.reload();
+}
+
     </script>
 </body>
 
