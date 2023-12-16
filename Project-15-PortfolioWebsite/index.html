@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neelam - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200&family=Poppins:ital,wght@0,200;0,400;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(22, 22, 108);
+
+            & ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            ;
+        }
+
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(248, 241, 229);
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: rgb(253, 195, 202);
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            background: blue;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 10vh 0;
+            align-items: center;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            /* margin: 70px 0; */
+            font-size: 2rem;
+        }
+
+        .leftSection .btn {
+            padding: 5px 9px;
+            background-color: rgb(63 103 207);
+            border: 2px solid rgb(179 132 132);
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            /* background-color: #ff0000; */
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 150vh;
+            height: 2px;
+            display: flex;
+            margin: 46px 0;
+        }
+
+        .secondSection .vertical {
+            height: 80px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 120px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+            padding-bottom: 20px;
+        }
+
+        .image-top {
+
+            width: 45px;
+            position: relative;
+            top: -50px;
+            left: -18px;
+        }
+
+        .vertical-text {
+            position: relative;
+            top: 25px;
+            width: 100px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 30px;
+            color: grey;
+            width: 150px;
+            font-size: 9px;
+
+        }
+
+
+        .footer {
+            background-color: rgb(16, 2, 29);
+            height: 50px;
+            padding: 20px 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+            display: flex;
+            width: 250px;
+        }
+
+        .footer ul li {
+            display: flex;
+            text-align: right;
+            padding: 0px 10px;
+        }
+
+        footer .footer-rights {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer>div {
+            width: 300px;
+        }
+
+        .purple {
+            color: rgb(32, 144, 199);
+        }
+
+        #element {
+            color: rgb(240, 115, 236);
+
+        }
+
+        .textgray {
+            color: grey;
+        }
+
+        @media screen and (max-width: 1000px) {
+            body {
+                /* background-color: red; */
+            }
+
+            footer {
+                /* display: none; */
+            }
+
+            .left {
+                font-size: 1rem;
+            }
+
+            .right {
+                font-size: 12px;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+                margin: 0vh;
+            }
+
+            .firstSection>div {
+                width: 60%;
+                display: flex;
+                /* flex-wrap: nowrap; */
+                align-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .leftSection {
+                font-size: 1rem;
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightSection {
+                width: 50% !important;
+            }
+
+            main hr {
+                margin: 15px 95px;
+            }
+
+            nav {
+                justify-content: center;
+                align-items: center;
+                height: 65px;
+                flex-direction: column;
+            }
+
+            .leftSection .btn {
+                display: inline-block;
+                margin-top: 5px;
+                padding: 3px 6px;
+                background-color: rgb(63 103 207);
+                border: 2px solid rgb(179 132 132);
+                border-radius: 8px;
+                font-size: 9px;
+            }
+
+            .secondSection {
+                width: 45%;
+                max-width: 120vw;
+                margin: auto;
+                height: 215vh;
+
+            }
+
+            .secondSection .vertical {
+                height: 400px;
+                margin: 0 6vw;
+            }
+
+            .secondSection .box {
+                width: 100dvh;
+                height: 2px;
+                display: flex;
+                margin: 0vh 0;
+                flex-direction: column;
+
+            }
+
+            .vertical-text,
+            .vertical-desc {
+                left: 35px;
+                top: -35px;
+
+            }
+
+            .image-top {
+                width: 37px;
+                position: relative;
+                top: 2px;
+                left: -22px;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Neelam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Neelam</span>
+                </div>
+                <div>
+                    and I am a passionate
+                </div>
+                <div> <span id="element">
+                    </span></div>
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit GitHub</button>
+            </div>
+            </div>
+            <div class="rightSection">
+                <img src="images/l2.png" alt="Web Developement">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection"><span class="textgray">What I have done so far
+
+            </span>
+            <h1>
+                Work Eperience
+            </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="images/h2.png" alt="">
+                    <div class="vertical-text">Html Developer(2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quam dignissimos dolorum
+                        molestiae ipsa, consequatur ab atque sunt distinctio laudantium reprehenderit officiis? Ipsum.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/h2.png" alt="">
+                    <div class="vertical-text">Html Developer(2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quam dignissimos dolorum
+                        molestiae ipsa, consequatur ab atque sunt distinctio laudantium reprehenderit officiis? Ipsum.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="images/h2.png" alt="">
+                    <div class="vertical-text">Html Developer(2010-2012)</div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quam dignissimos dolorum
+                        molestiae ipsa, consequatur ab atque sunt distinctio laudantium reprehenderit officiis? Ipsum.
+                    </div>
+                </div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Neelam's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                    <li>
+                        Services
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.neelamportfolio.com | All Rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Fullstack Developer'],
+        typeSpeed: 50,
+    });
+</script>
+
+
+</html>
